@@ -5,12 +5,13 @@ import picture from "../images/testPic.jpg";
 const Home = () => {
   return (
     <div className={styles.mainCont}>
-      <div className={styles.heroCont}>
-        <img src={picture} alt="Picture Of Me" className={styles.heroImg} />
-        <div className={styles.textCont}>
-          <h3 className={styles.heroTextName}>Jackson Furr</h3>
-          <h3 className={styles.heroTextDescription}>Fullstack Dev</h3>
-        </div>
+      <div className={styles.stars1}></div>
+      <div className={styles.stars2}></div>
+      <div className={styles.stars3}></div>
+      <div className={styles.title}>
+        <span>Jackson Furr</span>
+        <br />
+        <span>FullStack Developer</span>
       </div>
     </div>
   );

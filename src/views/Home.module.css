@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+.heroCont {
+  position: relative;
+}
+
+.heroImg {
+  opacity: 0.7;
+  width: 100%;
+  height: 100vh;
+}
+
+.textCont {
+  position: absolute;
+  border: 1px solid black;
+  max-width: 800px;
+  min-width: 500px;
+  width: auto;
+  top: 10%;
+  left: 28%;
+  right: 50%;
+  animation: 2s ease-out 0s 1 slideIn;
+  border-radius: 5px;
+}
+
+.heroTextName {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -90deg,
+    #44107a 0%,
+    #ff1361 50%,
+    #44107a 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  animation: 10s textClip infinite;
+}
+
+.heroTextDescription {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -90deg,
+    #44107a 0%,
+    #ff1361 50%,
+    #44107a 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  animation: 10s textClip 1s infinite;
+}
+
+@keyframes textClip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .textCont {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .warning {
+    display: none;
+  }
+}

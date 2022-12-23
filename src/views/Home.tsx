@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./Home.module.css";
-import picture from "../images/testPic.jpg";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div className={styles.mainCont}>
       <div className={styles.stars1}></div>
@@ -13,6 +12,7 @@ const Home = () => {
         <br />
         <span>FullStack Developer</span>
       </div>
+      <div className={styles.scrollBox}><i className="fa-solid fa-arrow-down" /></div>
     </div>
   );
 };

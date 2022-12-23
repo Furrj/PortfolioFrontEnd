@@ -1,3 +1,7 @@
+.mainCont {
+  display: flex;
+  flex-direction: column;
+}
 
 .title {
   position: absolute;
@@ -17,6 +21,21 @@
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.scrollBox {
+  border: 1px solid white;
+  width: 50px;
+  align-self: center;
+  margin-top: 95vh;
+  text-align: center;
+  animation: 2s ease-in-out 0s infinite bounce;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.scrollBox:hover {
+  background-color: lightgray;
 }
 
 .stars1 {
@@ -580,7 +599,7 @@
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-2000px)
+    transform: translateY(-2000px);
   }
 }
 
@@ -590,5 +609,26 @@
   }
   100% {
     transform: translateX(0%);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-25%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }

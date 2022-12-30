@@ -13,23 +13,23 @@ const Home: React.FC = () => {
           <br />
           <span>FullStack Developer</span>
         </div>
-        <div className={styles.scrollDownBox1}>
-          <a href="#box2">
+        <a href="#box2" className={styles.scrollDownBox1}>
+          <div>
             <i className="fa-solid fa-arrow-down" />
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
       <div className={styles.box2} id="box2">
-        <div className={styles.scrollUpBox2}>
-          <a href="#box1">
+        <a href="#box1" className={styles.scrollUpBox2}>
+          <div>
             <i className="fa-solid fa-arrow-up" />
-          </a>
-        </div>
-        <div className={styles.scrollDownBox2}>
-          <a href="#">
+          </div>
+        </a>
+        <a href="#" className={styles.scrollDownBox2}>
+          <div>
             <i className="fa-solid fa-arrow-down" />
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
   );

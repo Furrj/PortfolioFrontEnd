@@ -42,6 +42,20 @@
   -webkit-text-fill-color: transparent;
 }
 
+.aboutBox {
+  border: 1px solid red;
+  width: 300px;
+  align-self: center;
+  transform: translateY(30%);
+}
+
+.skillsBox {
+  border: 1px solid red;
+  width: 300px;
+  align-self: center;
+  transform: translateY(30%);
+}
+
 .scrollDownBox1 {
   border: 1px solid white;
   width: 50px;
@@ -77,7 +91,7 @@
   border: 1px solid white;
   width: 50px;
   align-self: center;
-  margin-top: 92vh;
+  margin-top: 34vh;
   margin-bottom: 10px;
   text-align: center;
   animation: 2s ease-in-out 0s infinite bounce;

@@ -1,3 +1,30 @@
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+/* TITLE */
+.title {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+  animation: 1.5s ease-in-out 0s 1 slideIn;
+}
+
+.title span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* MAIN CONTAINERS */
 .mainCont {
   display: flex;
   flex-direction: column;
@@ -22,26 +49,7 @@
   width: 100%;
 }
 
-.title {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  right: 0;
-  color: #fff;
-  text-align: center;
-  font-family: Lato;
-  font-weight: 300;
-  font-size: 50px;
-  letter-spacing: 10px;
-  animation: 1.5s ease-in-out 0s 1 slideIn;
-}
-
-.title span {
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
+/* ABOUT */
 .aboutBox {
   border: 1px solid red;
   width: 300px;
@@ -49,13 +57,34 @@
   transform: translateY(30%);
 }
 
+/* SKILLS */
 .skillsBox {
   border: 1px solid red;
   width: 300px;
   align-self: center;
   transform: translateY(30%);
+  display: flex;
+  flex-direction: row;
 }
 
+.box {
+  border: 1px solid black;
+  width: 100px;
+  height: 75px;
+  margin: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cssLogo {
+  width: 50px;
+  height: 63px;
+}
+
+/* SCROLL BUTTONS */
 .scrollDownBox1 {
   border: 1px solid white;
   width: 50px;
@@ -103,6 +132,7 @@
   background-color: lightgray;
 }
 
+/* STARS */
 .stars1 {
   width: 1px;
   height: 1px;
@@ -659,6 +689,7 @@
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
 
+/* ANIMATIONS */
 @keyframes animStar {
   from {
     transform: translateY(0px);

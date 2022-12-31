@@ -1,6 +1,11 @@
 import React from "react";
 import styles from "./Home.module.css";
 
+//IMAGES
+import HTML from "../images/HTML5.png";
+import CSS from "../images/CSS3.png";
+import JS from "../images/Javascript.png";
+
 const Home: React.FC = () => {
   return (
     <div className={styles.mainCont}>
@@ -51,17 +56,16 @@ const Home: React.FC = () => {
           </div>
         </a>
         <div className={styles.skillsBox}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-          similique sit necessitatibus culpa nobis debitis autem. Quae
-          aspernatur consequatur iure sunt, ipsa odio delectus officiis
-          accusantium, distinctio, corrupti quo dignissimos. Reiciendis est
-          soluta eius voluptatem hic dignissimos quas modi rerum? Et, dolorum
-          enim minus, nisi minima saepe quidem illum labore nihil inventore
-          praesentium temporibus impedit esse expedita neque est architecto?
-          Aperiam ratione molestias quibusdam necessitatibus velit aliquam esse
-          quam perspiciatis, rerum minus, laboriosam unde qui est, magnam quod
-          iste. Cum ipsa aspernatur quae eligendi dolor? Ipsum architecto dolore
-          numquam quae!
+          <div className={styles.box}>
+            <img src={HTML} alt="HTML5 Logo" />
+          </div>
+          <div className={styles.box}>
+            <img className={styles.cssLogo} src={CSS} alt="" />
+          </div>
+          <div className={styles.box}>
+            <img src={JS} alt="" />
+          </div>
+          <div className={styles.box}></div>
         </div>
         <a href="#" className={styles.scrollDownBox2}>
           <div>

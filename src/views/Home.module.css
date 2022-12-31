@@ -59,29 +59,64 @@ img {
 
 /* SKILLS */
 .skillsBox {
-  border: 1px solid red;
-  width: 300px;
+  width: 350px;
   align-self: center;
-  transform: translateY(30%);
+  transform: translate(4%, 50%);
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skillsTitle {
+  color: white;
+  display: flex;
+  justify-content: center;
+  transform: translateY(200%);
 }
 
 .box {
-  border: 1px solid black;
+  border-radius: 5px;
   width: 100px;
   height: 75px;
   margin: 5px;
-  background-color: white;
+  background-color: antiquewhite;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.htmlLogo {
+  height: 65px;
+}
+
 .cssLogo {
   width: 50px;
   height: 63px;
+}
+
+.sqlLogo {
+  height: 65px;
+}
+
+.jsLogo {
+  width: 60px;
+}
+
+.tsLogo {
+  width: 60px;
+}
+
+.nodeLogo {
+  width: 70px;
+}
+
+.reactLogo {
+  width: 70px;
+}
+
+.dockerLogo {
+  width: 90px;
 }
 
 /* SCROLL BUTTONS */
@@ -105,7 +140,7 @@ img {
   border: 1px solid white;
   width: 50px;
   align-self: center;
-  margin-top: 1vh;
+  margin-top: 2vh;
   text-align: center;
   animation: 2s ease-in-out 0s infinite bounce;
   cursor: pointer;
@@ -129,6 +164,22 @@ img {
 }
 
 .scrollDownBox2:hover {
+  background-color: lightgray;
+}
+
+.scrollDownBox3 {
+  border: 1px solid white;
+  width: 50px;
+  align-self: center;
+  margin-top: 40vh;
+  margin-bottom: 10px;
+  text-align: center;
+  animation: 2s ease-in-out 0s infinite bounce;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.scrollDownBox3:hover {
   background-color: lightgray;
 }
 

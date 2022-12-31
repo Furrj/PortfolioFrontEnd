@@ -5,6 +5,12 @@ import styles from "./Home.module.css";
 import HTML from "../images/HTML5.png";
 import CSS from "../images/CSS3.png";
 import JS from "../images/Javascript.png";
+import TS from "../images/Typescript.png";
+import Mongo from "../images/MongoDB.png";
+import Node from "../images/Node.png";
+import ReactLogo from "../images/React.png";
+import SQL from "../images/SQL.png";
+import Docker from "../images/Docker.png";
 
 const Home: React.FC = () => {
   return (
@@ -55,19 +61,37 @@ const Home: React.FC = () => {
             <i className="fa-solid fa-arrow-up" />
           </div>
         </a>
+        <h1 className={styles.skillsTitle}>Skills</h1>
         <div className={styles.skillsBox}>
           <div className={styles.box}>
-            <img src={HTML} alt="HTML5 Logo" />
+            <img className={styles.htmlLogo} src={HTML} alt="HTML5 Logo" />
           </div>
           <div className={styles.box}>
             <img className={styles.cssLogo} src={CSS} alt="" />
           </div>
           <div className={styles.box}>
-            <img src={JS} alt="" />
+            <img className={styles.sqlLogo} src={SQL} alt="" />
           </div>
-          <div className={styles.box}></div>
+          <div className={styles.box}>
+            <img className={styles.jsLogo} src={JS} alt="" />
+          </div>
+          <div className={styles.box}>
+            <img className={styles.tsLogo} src={TS} alt="" />
+          </div>
+          <div className={styles.box}>
+            <img className={styles.reactLogo} src={ReactLogo} alt="" />
+          </div>
+          <div className={styles.box}>
+            <img className={styles.nodeLogo} src={Node} alt="" />
+          </div>
+          <div className={styles.box}>
+            <img src={Mongo} alt="" />
+          </div>
+          <div className={styles.box}>
+            <img className={styles.dockerLogo} src={Docker} alt="" />
+          </div>
         </div>
-        <a href="#" className={styles.scrollDownBox2}>
+        <a href="#" className={styles.scrollDownBox3}>
           <div>
             <i className="fa-solid fa-arrow-down" />
           </div>

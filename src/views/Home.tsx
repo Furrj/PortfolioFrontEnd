@@ -11,6 +11,7 @@ import Node from "../images/Node.png";
 import ReactLogo from "../images/React.png";
 import SQL from "../images/SQL.png";
 import Docker from "../images/Docker.png";
+import Todo from "../images/todo.png";
 
 const Home: React.FC = () => {
   return (
@@ -91,11 +92,22 @@ const Home: React.FC = () => {
             <img className={styles.dockerLogo} src={Docker} alt="" />
           </div>
         </div>
-        <a href="#" className={styles.scrollDownBox3}>
+        <a href="#portfolio" className={styles.scrollDownBox3}>
           <div>
             <i className="fa-solid fa-arrow-down" />
           </div>
         </a>
+      </div>
+      <div className={styles.box4} id="portfolio">
+        <a href="#skills" className={styles.scrollUpBox2}>
+          <div>
+            <i className="fa-solid fa-arrow-up" />
+          </div>
+        </a>
+        <h1 className={styles.portfolioTitle}>Portfolio</h1>
+        <div className={styles.portBox}>
+          
+        </div>
       </div>
     </div>
   );

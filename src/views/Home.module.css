@@ -65,20 +65,20 @@ img {
 }
 
 /* SKILLS */
-.skillsBox {
-  width: 350px;
-  align-self: center;
-  transform: translate(4%, 50%);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .skillsTitle {
   color: white;
   display: flex;
   justify-content: center;
-  transform: translateY(200%);
+  transform: translateY(50px);
+}
+
+.skillsBox {
+  width: 350px;
+  align-self: center;
+  transform: translate(4%, 50px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -236,7 +236,7 @@ img {
   border: 1px solid white;
   width: 50px;
   align-self: center;
-  margin-top: 40vh;
+  margin-top: 33vh;
   margin-bottom: 10px;
   text-align: center;
   animation: 2s ease-in-out 0s infinite bounce;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Home.module.css";
 
 //IMAGES
@@ -11,9 +11,27 @@ import Node from "../images/Node.png";
 import ReactLogo from "../images/React.png";
 import SQL from "../images/SQL.png";
 import Docker from "../images/Docker.png";
-import Todo from "../images/todo.png";
+
+//PORTFOLIO SLIDES
+import Chatter from "../comps/Chatter";
+import Taskr from "../comps/Taskr";
+import Testr from "../comps/Testr";
 
 const Home: React.FC = () => {
+  const [activeSlideNum, setActiveSlideNum] = useState<number>(0);
+
+  const increaseSlideNum = () => {
+    if (activeSlideNum < 2) {
+      setActiveSlideNum(activeSlideNum + 1);
+    } else return;
+  };
+
+  const decreaseSlideNum = () => {
+    if (activeSlideNum > 0) {
+      setActiveSlideNum(activeSlideNum - 1);
+    } else return;
+  };
+
   return (
     <div className={styles.mainCont}>
       <div className={styles.stars1}></div>
@@ -106,7 +124,15 @@ const Home: React.FC = () => {
         </a>
         <h1 className={styles.portfolioTitle}>Portfolio</h1>
         <div className={styles.portBox}>
-          
+          <div className={styles.portLeftBtn} onClick={decreaseSlideNum}>
+            <i className="fa-solid fa-arrow-left" />
+          </div>
+          {activeSlideNum === 0 && <Chatter />}
+          {activeSlideNum === 1 && <Taskr />}
+          {activeSlideNum === 2 && <Testr />}
+          <div className={styles.portRightBtn} onClick={increaseSlideNum}>
+            <i className="fa-solid fa-arrow-right" />
+          </div>
         </div>
       </div>
     </div>

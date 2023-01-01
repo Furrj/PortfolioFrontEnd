@@ -141,10 +141,47 @@ img {
 }
 
 .portBox {
+  position: relative;
   background-color: antiquewhite;
   width: 80%;
-  height: 80vh;
+  height: 70vh;
   align-self: center;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.portLeftBtn {
+  position: absolute;
+  left: 5px;
+  bottom: 45%;
+  width: 30px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.portLeftBtn:hover {
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.portRightBtn {
+  position: absolute;
+  right: 5px;
+  bottom: 45%;
+  width: 30px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.portRightBtn:hover {
+  background-color: gray;
+  opacity: 0.5;
 }
 
 /* SCROLL BUTTONS */

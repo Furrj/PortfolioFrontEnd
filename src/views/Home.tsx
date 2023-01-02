@@ -124,15 +124,19 @@ const Home: React.FC = () => {
         </a>
         <h1 className={styles.portfolioTitle}>Portfolio</h1>
         <div className={styles.portBox}>
-          <div className={styles.portLeftBtn} onClick={decreaseSlideNum}>
-            <i className="fa-solid fa-arrow-left" />
-          </div>
+          {activeSlideNum > 0 && (
+            <div className={styles.portLeftBtn} onClick={decreaseSlideNum}>
+              <i className="fa-solid fa-arrow-left" />
+            </div>
+          )}
           {activeSlideNum === 0 && <Chatter />}
           {activeSlideNum === 1 && <Taskr />}
           {activeSlideNum === 2 && <Testr />}
-          <div className={styles.portRightBtn} onClick={increaseSlideNum}>
-            <i className="fa-solid fa-arrow-right" />
-          </div>
+          {activeSlideNum < 2 && (
+            <div className={styles.portRightBtn} onClick={increaseSlideNum}>
+              <i className="fa-solid fa-arrow-right" />
+            </div>
+          )}
         </div>
       </div>
     </div>

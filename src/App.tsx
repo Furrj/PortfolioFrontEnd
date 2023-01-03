@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //VIEWS
 import Home from "./views/Home";
-import About from "./views/About";
 
 const App: React.FC = () => {
   return (

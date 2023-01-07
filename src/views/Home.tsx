@@ -56,17 +56,9 @@ const Home: React.FC = () => {
           </div>
         </a>
         <div className={styles.aboutBox}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-          similique sit necessitatibus culpa nobis debitis autem. Quae
-          aspernatur consequatur iure sunt, ipsa odio delectus officiis
-          accusantium, distinctio, corrupti quo dignissimos. Reiciendis est
-          soluta eius voluptatem hic dignissimos quas modi rerum? Et, dolorum
-          enim minus, nisi minima saepe quidem illum labore nihil inventore
-          praesentium temporibus impedit esse expedita neque est architecto?
-          Aperiam ratione molestias quibusdam necessitatibus velit aliquam esse
-          quam perspiciatis, rerum minus, laboriosam unde qui est, magnam quod
-          iste. Cum ipsa aspernatur quae eligendi dolor? Ipsum architecto dolore
-          numquam quae!
+          Hey there! I'm a FullStack developer from Atlanta, GA. Most of my
+          experience is with MERN and PERN stacks, and I have an affinity for
+          back-end work.
         </div>
         <a href="#skills" className={styles.scrollDownBox2}>
           <div>

@@ -3,6 +3,23 @@ img {
   max-height: 100%;
 }
 
+.ship {
+  position: absolute;
+  top: 100px;
+  left: -150px;
+  color: red;
+  animation: 5s ease-in-out 0.5s infinite ship;
+}
+
+@keyframes ship {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(200vw);
+  }
+}
+
 /* TITLE */
 .title {
   position: absolute;

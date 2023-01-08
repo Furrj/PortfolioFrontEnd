@@ -34,6 +34,7 @@ const Home: React.FC = () => {
 
   return (
     <div className={styles.mainCont}>
+      <i className={`fa-solid fa-shuttle-space fa-6x ${styles.ship}`} />
       <div className={styles.stars1}></div>
       <div className={styles.stars2}></div>
       <div className={styles.stars3}></div>

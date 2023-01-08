@@ -11,11 +11,15 @@ import Node from "../images/Node.png";
 import ReactLogo from "../images/React.png";
 import SQL from "../images/SQL.png";
 import Docker from "../images/Docker.png";
+import Git from "../images/Git.png";
+import Figma from "../images/Figma.png";
+import Svelte from "../images/Svelte.png";
 
 //PORTFOLIO SLIDES
 import Chatter from "../comps/Chatter";
 import Taskr from "../comps/Taskr";
 import Testr from "../comps/Testr";
+import { logRoles } from "@testing-library/react";
 
 const Home: React.FC = () => {
   const [activeSlideNum, setActiveSlideNum] = useState<number>(0);
@@ -101,6 +105,15 @@ const Home: React.FC = () => {
           </div>
           <div className={styles.box}>
             <img className={styles.dockerLogo} src={Docker} alt="" />
+          </div>
+          <div className={styles.box}>
+            <img src={Git} alt="" />
+          </div>
+          <div className={styles.box}>
+            <img src={Figma} alt="" />
+          </div>
+          <div className={styles.box}>
+            <img src={Svelte} alt="" />
           </div>
         </div>
         <a href="#portfolio" className={styles.scrollDownBox3}>

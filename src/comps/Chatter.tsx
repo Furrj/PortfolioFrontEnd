@@ -15,12 +15,48 @@ const Chatter = () => {
           <h1 className={styles.title}>Chatter</h1>
           Social Media App
           <br />
-          <a href="https://chatter-gyb5f.ondigitalocean.app/">
-            chatter-gyb5f.ondigitalocean.app
-          </a>
         </div>
       </div>
-      <div className={styles.descripBox}></div>
+      <div className={styles.descripBox}>
+        <div className={styles.descripLeft}>
+          <ul>
+            <li>Account creation and full CRUD capability for posts</li>
+            <li>Allows anonymous posting without CRUD capability</li>
+            <li>Posts track upvotes/downvotes</li>
+            <li>Communities for individual topics</li>
+          </ul>
+          <hr />
+          <ul>
+            <li>Deployed on DigitalOcean as App using Docker Image</li>
+            <li>Backend: NodeJS w/ Express & MongoDB Atlas</li>
+            <li>Frontend: React w/ Typescript</li>
+          </ul>
+        </div>
+        <div className={styles.descripRight}>
+          <ul>
+            <li>
+              <a href="https://chatter-gyb5f.ondigitalocean.app/">
+                Link to site
+              </a>
+            </li>
+            <li>
+              <a href="https://hub.docker.com/r/fratersks/chatter">
+                Docker Repo
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Furrj/ChatterAPI">
+                Backend GitHub Repo
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Furrj/ChatterClient">
+                Frontend GitHub Repo
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

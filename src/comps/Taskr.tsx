@@ -19,7 +19,7 @@ const Taskr = () => {
       <div className={styles.descripBox}>
         <div className={styles.descripLeft}>
           <ul>
-            <li>Account creation and full CRUD capability for tasks</li>
+            <li style={{marginTop: 30}}>Account creation and full CRUD capability for tasks</li>
             <li>Create and track tasks</li>
             <li>Use dashboard to sort completed and uncompleted tasks</li>
           </ul>

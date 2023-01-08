@@ -23,6 +23,7 @@ const Chatter = () => {
             <li>Allows anonymous posting without CRUD capability</li>
             <li>Posts track upvotes/downvotes</li>
             <li>Communities for individual topics</li>
+            <li>Light/Dark color themes</li>
           </ul>
           <hr />
           <ul>

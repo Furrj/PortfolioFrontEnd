@@ -16,7 +16,38 @@ const Testr: React.FC = () => {
           Quiz App
         </div>
       </div>
-      <div className={styles.descripBox}></div>
+      <div className={styles.descripBox}>
+        <div className={styles.descripLeft}>
+          <ul>
+            <li style={{ marginTop: 30 }}>
+              Account creation and full CRUD capability for tasks
+            </li>
+            <li>Create and track tasks</li>
+            <li>Use dashboard to sort completed and uncompleted tasks</li>
+          </ul>
+          <hr />
+          <ul>
+            <li>Deployed on DigitalOcean as App using Docker Image</li>
+            <li>Backend: NodeJS w/ Express & MongoDB Atlas</li>
+            <li>Frontend: React w/ Typescript</li>
+          </ul>
+        </div>
+        <div className={styles.descripRight}>
+          <ul>
+            <li>
+              <a href="https://testr-yfdmd.ondigitalocean.app/">Link to site</a>
+            </li>
+            <li>
+              <a href="https://hub.docker.com/r/fratersks/testr">Docker Repo</a>
+            </li>
+            <li>
+              <a href="https://github.com/Furrj/Todo2ServerTypescript">
+                GitHub Repo
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

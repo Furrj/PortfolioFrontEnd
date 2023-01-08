@@ -14,7 +14,6 @@ const Chatter = () => {
         <div className={styles.titleBox}>
           <h1 className={styles.title}>Chatter</h1>
           Social Media App
-          <br />
         </div>
       </div>
       <div className={styles.descripBox}>

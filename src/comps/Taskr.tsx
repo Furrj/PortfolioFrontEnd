@@ -14,13 +14,43 @@ const Taskr = () => {
         <div className={styles.titleBox}>
           <h1 className={styles.title}>Taskr</h1>
           Productivity App
-          <br />
-          <a href="https://taskr-zerun.ondigitalocean.app">
-            taskr-zerun.ondigitalocean.app/mytodos
-          </a>
         </div>
       </div>
-      <div className={styles.descripBox}></div>
+      <div className={styles.descripBox}>
+        <div className={styles.descripLeft}>
+          <ul>
+            <li>Account creation and full CRUD capability for tasks</li>
+            <li>Create and track tasks</li>
+            <li>Use dashboard to sort completed and uncompleted tasks</li>
+          </ul>
+          <hr />
+          <ul>
+            <li>Deployed on DigitalOcean as App using Docker Image</li>
+            <li>Backend: NodeJS w/ Express & MongoDB Atlas</li>
+            <li>Frontend: React w/ Typescript</li>
+          </ul>
+        </div>
+        <div className={styles.descripRight}>
+          <ul>
+            <li>
+              <a href="https://taskr-zerun.ondigitalocean.app/">Link to site</a>
+            </li>
+            <li>
+              <a href="https://hub.docker.com/r/fratersks/taskr">Docker Repo</a>
+            </li>
+            <li>
+              <a href="https://github.com/Furrj/Todo2ServerTypescript">
+                Backend GitHub Repo
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Furrj/Todo2TypescriptClient">
+                Frontend GitHub Repo
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

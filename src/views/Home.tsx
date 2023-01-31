@@ -148,7 +148,13 @@ const Home: React.FC = () => {
             </div>
           )}
         </div>
+				<a href="#contact" className={styles.scrollDownBox4}>
+          <div>
+            <i className="fa-solid fa-arrow-down" />
+          </div>
+        </a>
       </div>
+      <div className={styles.box5} id="contact">Hello</div>
     </div>
   );
 };

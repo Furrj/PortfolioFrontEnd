@@ -14,6 +14,7 @@ import Docker from "../images/Docker.png";
 import Git from "../images/Git.png";
 import Figma from "../images/Figma.png";
 import Svelte from "../images/Svelte.png";
+import Headshot from "../images/Headshot1.jpg";
 
 //PORTFOLIO SLIDES
 import Chatter from "../comps/Chatter";
@@ -61,6 +62,9 @@ const Home: React.FC = () => {
           </div>
         </a>
         <div className={styles.aboutBox}>
+          <div>
+            <img className={styles.aboutPicBox} src={Headshot} />
+          </div>
           Hey there! I'm a FullStack developer from Atlanta, GA. Most of my
           experience is with MERN and PERN stacks, and I have an affinity for
           back-end work.

@@ -75,11 +75,22 @@ img {
 
 /* ABOUT */
 .aboutBox {
-  border: 1px solid red;
-  width: 300px;
+  width: 400px;
   align-self: center;
   transform: translateY(30%);
-  color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	border-radius: 5px;
+	background-color: rgba(240, 248, 255, 0.1);
+	color: white;
+}
+
+.aboutPicBox {
+  border-radius: 5px;
+  width: 150px;
+  height: 200px;
 }
 
 /* SKILLS */

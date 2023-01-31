@@ -78,7 +78,6 @@ img {
   flex-direction: column;
   height: 100vh;
   width: 100%;
-	background-color: red;
 }
 
 /* ABOUT */
@@ -220,6 +219,15 @@ img {
 .portRightBtn:hover {
   background-color: gray;
   opacity: 0.5;
+}
+
+/* CONTACT */
+.contactFormBox {
+	width: 400px;
+	height: 300px;
+	background-color: red;
+	align-self: center;
+	transform: translateY(50%);
 }
 
 /* SCROLL BUTTONS */

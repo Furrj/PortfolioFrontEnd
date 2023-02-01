@@ -36,6 +36,7 @@ const initState: IInput = {
 const Home: React.FC = () => {
   const [activeSlideNum, setActiveSlideNum] = useState<number>(0);
   const [input, setInput] = useState<IInput>(initState);
+  const [messageSent, setMessageSent] = useState<boolean>(false);
 
   const sendMessage = async (): Promise<void> => {
     try {
@@ -49,7 +50,8 @@ const Home: React.FC = () => {
           message: input.message,
         }),
       });
-			const res = await send.json();
+      const res = await send.json();
+      setMessageSent(true);
     } catch (e) {
       console.log(`Error: ${e}`);
     }
@@ -207,25 +209,30 @@ const Home: React.FC = () => {
             Cell: 678-852-1980
           </div>
           <hr />
-          <div className={styles.contactForm}>
-            <input
-              type="text"
-              name="email"
-              placeholder="Your Email Address"
-              value={input.email}
-              onChange={inputHandler}
-            />
-            <br />
-            <textarea
-              placeholder="Message"
-              name="message"
-              rows={5}
-              value={input.message}
-              onChange={inputHandler}
-            ></textarea>
-            <br />
-            <button onClick={sendMessage}>Send</button>
-          </div>
+          {!messageSent && (
+            <div className={styles.contactForm}>
+              <input
+                type="text"
+                name="email"
+                placeholder="Your Email Address"
+                value={input.email}
+                onChange={inputHandler}
+              />
+              <br />
+              <textarea
+                placeholder="Message"
+                name="message"
+                rows={5}
+                value={input.message}
+                onChange={inputHandler}
+              ></textarea>
+              <br />
+              <button onClick={sendMessage}>Send</button>
+            </div>
+          )}
+          {messageSent && (
+            <div>Thank you! I will get back to you as soon as I can.</div>
+          )}
         </div>
       </div>
     </div>

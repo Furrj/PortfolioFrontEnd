@@ -212,7 +212,7 @@ const Home: React.FC = () => {
           {!messageSent && (
             <div className={styles.contactForm}>
               <input
-                type="text"
+                type="email"
                 name="email"
                 placeholder="Your Email Address"
                 value={input.email}

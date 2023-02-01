@@ -223,11 +223,30 @@ img {
 
 /* CONTACT */
 .contactFormBox {
-	width: 400px;
+	text-align: center;
+	width: 500px;
 	height: 300px;
-	background-color: red;
+	background-color: rgba(221, 191, 191, 0.3);
+	color: white;
 	align-self: center;
-	transform: translateY(50%);
+	transform: translateY(30%);
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.contactForm {
+	margin-top: 20px;
+}
+
+.contactForm input {
+	width: 450px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.contactForm textarea {
+	width: 450px;
+	text-align: center;
 }
 
 /* SCROLL BUTTONS */

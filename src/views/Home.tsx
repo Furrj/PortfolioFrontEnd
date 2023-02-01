@@ -22,16 +22,55 @@ import Taskr from "../comps/Taskr";
 import Testr from "../comps/Testr";
 import { logRoles } from "@testing-library/react";
 
+//TS
+interface IInput {
+  email: string;
+  message: string;
+}
+
+const initState: IInput = {
+  email: "",
+  message: "",
+};
+
 const Home: React.FC = () => {
   const [activeSlideNum, setActiveSlideNum] = useState<number>(0);
+  const [input, setInput] = useState<IInput>(initState);
 
-  const increaseSlideNum = () => {
+  const sendMessage = async (): Promise<void> => {
+    try {
+      const send = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: input.email,
+          message: input.message,
+        }),
+      });
+			const res = await send.json();
+    } catch (e) {
+      console.log(`Error: ${e}`);
+    }
+  };
+
+  const inputHandler = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ): void => {
+    setInput({
+      ...input,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const increaseSlideNum = (): void => {
     if (activeSlideNum < 2) {
       setActiveSlideNum(activeSlideNum + 1);
     } else return;
   };
 
-  const decreaseSlideNum = () => {
+  const decreaseSlideNum = (): void => {
     if (activeSlideNum > 0) {
       setActiveSlideNum(activeSlideNum - 1);
     } else return;
@@ -155,12 +194,39 @@ const Home: React.FC = () => {
         </a>
       </div>
       <div className={styles.box5} id="contact">
-			<a href="#portfolio" className={styles.scrollUpBox2}>
+        <a href="#portfolio" className={styles.scrollUpBox2}>
           <div>
             <i className="fa-solid fa-arrow-up" />
           </div>
         </a>
-        <div className={styles.contactFormBox}></div>
+        <div className={styles.contactFormBox}>
+          <h2>Contact</h2>
+          <div className={styles.myInfo}>
+            Email: Jackson.A.Furr@gmail.com
+            <br />
+            Cell: 678-852-1980
+          </div>
+          <hr />
+          <div className={styles.contactForm}>
+            <input
+              type="text"
+              name="email"
+              placeholder="Your Email Address"
+              value={input.email}
+              onChange={inputHandler}
+            />
+            <br />
+            <textarea
+              placeholder="Message"
+              name="message"
+              rows={5}
+              value={input.message}
+              onChange={inputHandler}
+            ></textarea>
+            <br />
+            <button onClick={sendMessage}>Send</button>
+          </div>
+        </div>
       </div>
     </div>
   );

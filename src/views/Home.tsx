@@ -108,7 +108,8 @@ const Home: React.FC = () => {
           </div>
           Hey there! I'm a FullStack developer from Atlanta, GA. Most of my
           experience is with MERN and PERN stacks, and I have an affinity for
-          back-end work. 
+          back-end work. At the moment I am looking for a Junior Developer
+          position.
         </div>
         <a href="#skills" className={styles.scrollDownBox2}>
           <div>

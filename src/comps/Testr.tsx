@@ -20,16 +20,15 @@ const Testr: React.FC = () => {
         <div className={styles.descripLeft}>
           <ul>
             <li style={{ marginTop: 30 }}>
-              Account creation and full CRUD capability for tasks
+              Creates simple math quizzes for basic operations
             </li>
-            <li>Create and track tasks</li>
-            <li>Use dashboard to sort completed and uncompleted tasks</li>
+            <li>Input an upper and lower range as well as time limit</li>
+            <li>See results and final score afterwards</li>
           </ul>
           <hr />
           <ul>
             <li>Deployed on DigitalOcean as App using Docker Image</li>
-            <li>Backend: NodeJS w/ Express & MongoDB Atlas</li>
-            <li>Frontend: React w/ Typescript</li>
+            <li>Made with React</li>
           </ul>
         </div>
         <div className={styles.descripRight}>

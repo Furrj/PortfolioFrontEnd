@@ -117,8 +117,21 @@ const Home: React.FC = () => {
           </div>
           <div className={styles.aboutLinksBox}>
             <button>
-              <a className={styles.aboutLinks} href="https://github.com/Furrj" target="_blank">
+              <a
+                className={styles.aboutLinks}
+                href="https://github.com/Furrj"
+                target="_blank"
+              >
                 GitHub
+              </a>
+            </button>
+            <button>
+              <a
+                className={styles.aboutLinks}
+                href="https://www.linkedin.com/in/jackson-furr-8a124225a/"
+                target="_blank"
+              >
+                LinkedIn
               </a>
             </button>
             <button>

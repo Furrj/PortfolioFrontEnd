@@ -8,7 +8,7 @@ img {
   top: 100px;
   left: -150px;
   color: red;
-  animation: 5s ease-in-out 0.5s infinite ship;
+  animation: 4s ease-in-out 0.5s infinite ship;
 }
 
 @keyframes ship {
@@ -100,6 +100,15 @@ img {
   height: 200px;
 }
 
+.aboutLinksBox {
+	display: flex;
+	flex-direction: column;
+}
+
+.aboutLinks {
+	text-decoration: none;
+}
+
 /* SKILLS */
 .skillsTitle {
   color: white;
@@ -174,7 +183,6 @@ img {
   position: relative;
   background-color: antiquewhite;
   width: 80%;
-  height: 70vh;
   align-self: center;
   border-radius: 5px;
   opacity: 0.9;

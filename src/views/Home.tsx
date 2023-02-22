@@ -16,11 +16,13 @@ import Figma from "../images/Figma.png";
 import Svelte from "../images/Svelte.png";
 import Headshot from "../images/Headshot1.jpg";
 
+//RESUME
+import Resume from "../files/Jackson_Furr_-_Junior_Web_Developer.pdf";
+
 //PORTFOLIO SLIDES
 import Chatter from "../comps/Chatter";
 import Taskr from "../comps/Taskr";
 import Testr from "../comps/Testr";
-import { logRoles } from "@testing-library/react";
 
 //TS
 interface IInput {
@@ -50,7 +52,7 @@ const Home: React.FC = () => {
           message: input.message,
         }),
       });
-      const res = await send.json();
+      await send.json();
       setMessageSent(true);
     } catch (e) {
       console.log(`Error: ${e}`);
@@ -104,12 +106,27 @@ const Home: React.FC = () => {
         </a>
         <div className={styles.aboutBox}>
           <div>
-            <img className={styles.aboutPicBox} src={Headshot} />
+            <img className={styles.aboutPicBox} src={Headshot} alt="headshot" />
           </div>
-          Hey there! I'm a FullStack developer from Atlanta, GA. Most of my
-          experience is with MERN and PERN stacks, and I have an affinity for
-          back-end work. At the moment I am looking for a Junior Developer
-          position.
+          <div>
+            Hey there! I'm a FullStack developer from Atlanta, GA. Most of my
+            experience is with MERN and PERN stacks, and I have an affinity for
+            back-end work. At the moment I am looking for a Junior Developer
+            position.
+            <hr />
+          </div>
+          <div className={styles.aboutLinksBox}>
+            <button>
+              <a className={styles.aboutLinks} href="https://github.com/Furrj" target="_blank">
+                GitHub
+              </a>
+            </button>
+            <button>
+              <a className={styles.aboutLinks} href={Resume} download>
+                Resume
+              </a>
+            </button>
+          </div>
         </div>
         <a href="#skills" className={styles.scrollDownBox2}>
           <div>
@@ -129,37 +146,37 @@ const Home: React.FC = () => {
             <img className={styles.htmlLogo} src={HTML} alt="HTML5 Logo" />
           </div>
           <div className={styles.box}>
-            <img className={styles.cssLogo} src={CSS} alt="" />
+            <img className={styles.cssLogo} src={CSS} alt="cssLogo" />
           </div>
           <div className={styles.box}>
-            <img className={styles.sqlLogo} src={SQL} alt="" />
+            <img className={styles.jsLogo} src={JS} alt="jsLogo" />
           </div>
           <div className={styles.box}>
-            <img className={styles.jsLogo} src={JS} alt="" />
+            <img className={styles.tsLogo} src={TS} alt="tsLogo" />
           </div>
           <div className={styles.box}>
-            <img className={styles.tsLogo} src={TS} alt="" />
+            <img className={styles.nodeLogo} src={Node} alt="nodeLogo" />
           </div>
           <div className={styles.box}>
-            <img className={styles.reactLogo} src={ReactLogo} alt="" />
+            <img className={styles.reactLogo} src={ReactLogo} alt="reactLogo" />
           </div>
           <div className={styles.box}>
-            <img className={styles.nodeLogo} src={Node} alt="" />
+            <img src={Svelte} alt="svelteLogo" />
           </div>
           <div className={styles.box}>
-            <img src={Mongo} alt="" />
+            <img className={styles.sqlLogo} src={SQL} alt="sqlLogo" />
           </div>
           <div className={styles.box}>
-            <img className={styles.dockerLogo} src={Docker} alt="" />
+            <img src={Mongo} alt="mongoLogo" />
           </div>
           <div className={styles.box}>
-            <img src={Git} alt="" />
+            <img className={styles.dockerLogo} src={Docker} alt="dockerLogo" />
           </div>
           <div className={styles.box}>
-            <img src={Figma} alt="" />
+            <img src={Git} alt="gitLogo" />
           </div>
           <div className={styles.box}>
-            <img src={Svelte} alt="" />
+            <img src={Figma} alt="figmaLogo" />
           </div>
         </div>
         <a href="#portfolio" className={styles.scrollDownBox3}>

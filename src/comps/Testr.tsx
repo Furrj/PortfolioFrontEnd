@@ -40,7 +40,7 @@ const Testr: React.FC = () => {
               <a href="https://hub.docker.com/r/fratersks/testr">Docker Repo</a>
             </li>
             <li>
-              <a href="https://github.com/Furrj/Todo2ServerTypescript">
+              <a href="https://github.com/Furrj/Testr">
                 GitHub Repo
               </a>
             </li>

@@ -23,6 +23,7 @@ import Resume from "../files/Jackson_Furr_-_Junior_Web_Developer.pdf";
 import Chatter from "../comps/Chatter";
 import Taskr from "../comps/Taskr";
 import Testr from "../comps/Testr";
+import Portfolio from "../comps/Portfolio";
 
 //TS
 interface IInput {
@@ -69,7 +70,7 @@ const Home: React.FC = () => {
   };
 
   const increaseSlideNum = (): void => {
-    if (activeSlideNum < 2) {
+    if (activeSlideNum < 3) {
       setActiveSlideNum(activeSlideNum + 1);
     } else return;
   };
@@ -214,7 +215,8 @@ const Home: React.FC = () => {
           {activeSlideNum === 0 && <Chatter />}
           {activeSlideNum === 1 && <Taskr />}
           {activeSlideNum === 2 && <Testr />}
-          {activeSlideNum < 2 && (
+					{activeSlideNum === 3 && <Portfolio />}
+          {activeSlideNum < 3 && (
             <div className={styles.portRightBtn} onClick={increaseSlideNum}>
               <i className="fa-solid fa-arrow-right" />
             </div>

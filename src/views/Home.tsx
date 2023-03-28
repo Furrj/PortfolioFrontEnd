@@ -113,7 +113,7 @@ const Home: React.FC = () => {
             Hey there! I'm a FullStack developer from Atlanta, GA. Most of my
             experience is with MERN and PERN stacks, and I have an affinity for
             back-end work. At the moment I am looking for a Junior Developer
-            position. 
+            position.
             <hr />
           </div>
           <div className={styles.aboutLinksBox}>
@@ -215,7 +215,7 @@ const Home: React.FC = () => {
           {activeSlideNum === 0 && <Chatter />}
           {activeSlideNum === 1 && <Taskr />}
           {activeSlideNum === 2 && <Testr />}
-					{activeSlideNum === 3 && <Portfolio />}
+          {activeSlideNum === 3 && <Portfolio />}
           {activeSlideNum < 3 && (
             <div className={styles.portRightBtn} onClick={increaseSlideNum}>
               <i className="fa-solid fa-arrow-right" />
